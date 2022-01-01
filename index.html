@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="_token" content="{{ csrf_token() }}"/>
+    <title>Pritanorka</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    
+</head>
+<body>
+    <div id="fondo">
+        <h1 id="titulos">Pritanorka</h1>
+        <div class="container">
+            <div class="row">
+                <!-- elementos -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <!-- elementos del carro -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- precio total -->
+                    <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                    
+                    <p id="cuerpo-carro"></p>
+                    <div id="formulario">
+                        <form id="formdata" method="get" >
+                            <div  class="mb-3">
+                                <input type="email" name="email" id="email" class="form-control" required="required" placeholder="Ingrese su email">
+                                <label id="EM"></label>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" name="direccion" id="direccion"  required="required" placeholder="Ingrese su direccion">
+                                <label id="DI"></label>
+                            </div>
+                            <div class="mb-3">
+                                <select id="partido">
+                                <option value="CABA">CABA</option>
+                                <option value="Zona Norte">Zona Norte</option>
+                                <option value="Zona Oeste">Zona Oeste</option>
+                                <option value="Zona Sur">Zona Sur</option>
+                                </select>
+                            </div>
+                        </form>
+                        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button><span><button id="boton-enviar" class="btn btn-success">Comprar</button></span>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Pritanorka <br> Creado por Yufie Asdragath en 2021. Todos los derechos reservados.</p>
+            <a href="">Terminos y condiciones</a>
+            <a href="">Politicas de Privacidad</a>
+            <a href="">Sobre Nosotros</a>
+        </footer>
+    </div>
+    <script src="./JS/jquery.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

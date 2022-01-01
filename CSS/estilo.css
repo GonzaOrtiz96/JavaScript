@@ -1,0 +1,78 @@
+#titulos {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (min-width: 426px) {
+  #titulos {
+    font-size: 4rem;
+  }
+}
+
+#fondo {
+  background: url("../media/fondo.jpeg");
+  width: 100%;
+  background-attachment: inherit;
+}
+
+#fondo h1 {
+  color: black;
+}
+
+#fondo h2 {
+  color: black;
+}
+
+#fondo h3 {
+  color: black;
+}
+
+#fondo ol {
+  color: black;
+}
+
+/* formato footer para todos */
+.footer {
+  background-color: grey;
+  padding: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.container {
+  /* img{
+        margin-bottom: 10px;
+        transition: transform 300ms;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 260px;
+        &:hover{
+            transform: scale(1.07,1.07);
+        }
+    } */
+}
+
+.container div {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+.container h2, .container h3 {
+  text-align: center;
+}
+
+.contador {
+  background-color: rgba(255, 255, 255, 0) !important;
+  text-align: center;
+}
+/*# sourceMappingURL=estilo.css.map */
